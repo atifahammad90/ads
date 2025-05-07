@@ -1,0 +1,62 @@
+<div style="font-family: Arial; padding: 20px;">
+  <h2>😂 Funny Jokes 😂</h2>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke1">Why don’t scientists trust atoms? Because they make up everything!</p>
+    <button onclick="copyText('joke1')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke2">Why did the scarecrow win an award? Because he was outstanding in his field.</p>
+    <button onclick="copyText('joke2')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke3">I'm reading a book on anti-gravity. It's impossible to put down!</p>
+    <button onclick="copyText('joke3')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke4">What do you call fake spaghetti? An impasta.</p>
+    <button onclick="copyText('joke4')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke5">Why did the bicycle fall over? Because it was two-tired!</p>
+    <button onclick="copyText('joke5')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke6">How does a penguin build its house? Igloos it together.</p>
+    <button onclick="copyText('joke6')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke7">Why can’t you hear a pterodactyl go to the bathroom? Because the "P" is silent.</p>
+    <button onclick="copyText('joke7')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke8">What do you get when you cross a snowman with a vampire? Frostbite.</p>
+    <button onclick="copyText('joke8')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke9">I would avoid the sushi if I were you. It’s a little fishy.</p>
+    <button onclick="copyText('joke9')">Copy</button>
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <p id="joke10">Why don't skeletons fight each other? They don't have the guts.</p>
+    <button onclick="copyText('joke10')">Copy</button>
+  </div>
+</div>
+
+<script>
+  function copyText(id) {
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Copied!");
+    });
+  }
+</script>
