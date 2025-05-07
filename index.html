@@ -1,62 +1,101 @@
-<div style="font-family: Arial; padding: 20px;">
-  <h2>😂 Funny Jokes 😂</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Jokes Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .joke-box {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .copy-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke1">Why don’t scientists trust atoms? Because they make up everything!</p>
-    <button onclick="copyText('joke1')">Copy</button>
-  </div>
+    <h2>😂 আজকের ১০টি মজার জোকস!</h2>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke2">Why did the scarecrow win an award? Because he was outstanding in his field.</p>
-    <button onclick="copyText('joke2')">Copy</button>
-  </div>
+    <?php
+    $jokes = [
+        "১. শিক্ষক: পাস করবি কী করে? ছাত্র: আরে স্যার, পাসওয়ার্ড তো আপনিই দিবেন!",
+        "২. মা: বাবু পড়তে বস! ছেলে: বই-ও তো বসে আছে!",
+        "৩. পুলিশ: রাতে বাইরে কেন? ছেলে: ঘুমিয়ে গেলে স্বপ্নে প্রেমিকা আসে না তাই!",
+        "৪. ডাক্তার: এটা খেলে বাঁচবেন। রোগী: না খেলে? ডাক্তার: আমি বাঁচবো!",
+        "৫. স্ত্রী: আমি মোটা নাকি? স্বামী: না, তুমি তো সুন্দরভাবে ভরাট!",
+        "৬. প্রেমিকা: আমাকে কবে ভালোবাসলে? প্রেমিক: যখন থেকে ফ্রি ফেসবুক পাই!",
+        "৭. ছেলে: বাবা আমাকে টাকা দিন। বাবা: তুই তো অনলাইনে পড়িস, খরচ কিসের?",
+        "৮. প্রেমিকা: আমি কেমন দেখতে? প্রেমিক: হ্যাঁ, দেখতে লাগে!",
+        "৯. ছেলে: হ্যালো, স্যার আপনার মেয়েকে ভালোবাসি। স্যার: অ্যাপ্লিকেশন দিয়ে যা!",
+        "১০. দোকানদার: মাস্ক নেবেন? ক্রেতা: না ভাই, স্মাইলেই কাজ চলে যায়!"
+    ];
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke3">I'm reading a book on anti-gravity. It's impossible to put down!</p>
-    <button onclick="copyText('joke3')">Copy</button>
-  </div>
+    foreach ($jokes as $index => $joke) {
+        echo "<div class='joke-box'>";
+        echo "<p id='joke$index'>$joke</p>";
+        echo "<button class='copy-btn' onclick=\"copyText('joke$index')\">Copy</button>";
+        echo "</div>";
+    }
+    ?>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke4">What do you call fake spaghetti? An impasta.</p>
-    <button onclick="copyText('joke4')">Copy</button>
-  </div>
+    <!-- Copy script -->
+    <script>
+        function copyText(id) {
+            var text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Copied!");
+            }, function(err) {
+                alert("Failed to copy!");
+            });
+        }
+    </script>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke5">Why did the bicycle fall over? Because it was two-tired!</p>
-    <button onclick="copyText('joke5')">Copy</button>
-  </div>
+    <!-- Banner 728x90 -->
+    <div style="text-align:center; margin: 30px 0;">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '9962bae166d4eec772587d93b5f1ffd0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/9962bae166d4eec772587d93b5f1ffd0/invoke.js"></script>
+    </div>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke6">How does a penguin build its house? Igloos it together.</p>
-    <button onclick="copyText('joke6')">Copy</button>
-  </div>
+    <!-- Social Bar -->
+    <script type='text/javascript' src='//pl26511115.profitableratecpm.com/d4/24/78/d4247897e3cb205dd8fbc6dcc2585d06.js'></script>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke7">Why can’t you hear a pterodactyl go to the bathroom? Because the "P" is silent.</p>
-    <button onclick="copyText('joke7')">Copy</button>
-  </div>
+    <!-- Native Banner -->
+    <div id="container-e24ec4873b4145e6e44e2acd0985b790" style="margin-top: 20px;"></div>
+    <script async="async" data-cfasync="false" src="//pl26511125.profitableratecpm.com/e24ec4873b4145e6e44e2acd0985b790/invoke.js"></script>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke8">What do you get when you cross a snowman with a vampire? Frostbite.</p>
-    <button onclick="copyText('joke8')">Copy</button>
-  </div>
+    <!-- Popunder -->
+    <script type='text/javascript' src='//pl26584159.profitableratecpm.com/38/3a/4c/383a4cc9ff3f35c9f7a427d6d5f28272.js'></script>
 
-  <div style="margin-bottom: 10px;">
-    <p id="joke9">I would avoid the sushi if I were you. It’s a little fishy.</p>
-    <button onclick="copyText('joke9')">Copy</button>
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <p id="joke10">Why don't skeletons fight each other? They don't have the guts.</p>
-    <button onclick="copyText('joke10')">Copy</button>
-  </div>
-</div>
-
-<script>
-  function copyText(id) {
-    const text = document.getElementById(id).innerText;
-    navigator.clipboard.writeText(text).then(() => {
-      alert("Copied!");
-    });
-  }
-</script>
+</body>
+</html>
