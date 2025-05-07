@@ -5,6 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Bangla Adult Jokes</title>
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <script>
+    window.onload = function() {
+      if (window != window.top) {
+        window.top.location = window.location;
+      }
+    }
+    // Prevent automatic redirects
+    history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+      history.pushState(null, null, document.URL);
+    });
+  </script>
 </head>
 <body bgcolor="#f0f0f0">
   <!-- Banner Ad -->
